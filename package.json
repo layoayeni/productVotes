@@ -1,0 +1,36 @@
+{
+  "name": "product_voting",
+  "version": "1.1.0",
+  "author": "Fullstack.io",
+  "scripts": {
+    "go": "open http://localhost:3000; npm run server",
+    "e2e": "nightwatch",
+    "test": "concurrently -k 'npm run server' 'npm run e2e'",
+    "start": "npm run server",
+    "server": "live-server public --host=localhost --port=3000 --middleware=./disable-browser-cache.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "concurrently": "2.2.0",
+    "live-server": "https://github.com/acco/live-server/tarball/master"
+  },
+  "description": "1. Ensure you have `npm` installed.",
+  "main": "disable-browser-cache.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/layoayeni/productVotes.git"
+  },
+  "keywords": [
+    "Service/Product",
+    "Voting"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/layoayeni/productVotes/issues"
+  },
+  "homepage": "https://github.com/layoayeni/productVotes#readme"
+}
